@@ -17,27 +17,22 @@
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="180px"
-        android:textStyle="italic"
-        android:onClick="GetName"/>
+        android:textStyle="italic" />
 
     <Button
-        android:id="@+id/SinglePlayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="115dp"
         android:layout_marginTop="80dp"
         android:text="Single Player"
-        android:textAlignment="center"
-        android:onClick="GetName"/>
+        android:textAlignment="center" />
 
     <Button
-        android:id="@+id/MultiPlayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="115dp"
         android:layout_marginTop="40dp"
         android:text="Multi Player"
-        android:textAlignment="center"
-        android:onClick="GetName"/>
+        android:textAlignment="center" />
 
 </LinearLayout>
