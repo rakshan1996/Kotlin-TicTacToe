@@ -6,15 +6,48 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Player1:"/>
+            android:text="Player1"
+            android:textSize="24sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"/>
         <EditText
             android:layout_width="180dp"
+            android:id="@+id/Value1"
             android:layout_height="wrap_content"
-            android:minHeight="20dp"/>
+            android:minHeight="20dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Player2"
+            android:text="Player2"
+            android:textSize="24sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="180dp"
+            android:id="@+id/Value2"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="200dp"
+            android:onClick="StartGame"
+            />
 
     </LinearLayout>
 

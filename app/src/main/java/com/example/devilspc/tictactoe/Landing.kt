@@ -1,5 +1,6 @@
 package com.example.devilspc.tictactoe
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -20,11 +21,18 @@ class Landing : AppCompatActivity() {
         when(BuId.id)
         {
             R.id.SinglePlayer -> {
-                Toast.makeText(this,"Single Player Game Selected",Toast.LENGTH_SHORT).show()
+                val myIntent=Intent(this,names::class.java)
+                myIntent.putExtra("single_Player",1)
+                startActivity(myIntent)
+
+
             }
 
             R.id.MultiPlayer -> {
-                Toast.makeText(this,"Multi Player Game Selected",Toast.LENGTH_SHORT).show()
+                val myIntent=Intent(this,names::class.java)
+                myIntent.putExtra("single_Player",2)
+                startActivity(myIntent)
+
             }
         }
 
