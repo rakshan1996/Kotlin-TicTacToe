@@ -15,6 +15,11 @@ class names :AppCompatActivity(){
        var type=myIntent.extras.getInt("single_Player")
 
            setContentView(R.layout.names)
+        if(type==1)
+        {
+            findViewById<TextView>(R.id.Player2).visibility=View.INVISIBLE
+            findViewById<EditText>(R.id.Value2).visibility=View.INVISIBLE
+        }
 
 
     }
