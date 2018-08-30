@@ -18,7 +18,7 @@
         android:textColor="@color/colorPrimary"
         android:textSize="180px"
         android:textStyle="italic"
-        android:onClick="GetName"/>
+        />
 
     <Button
         android:id="@+id/SinglePlayer"

@@ -18,6 +18,7 @@
         <EditText
             android:layout_width="180dp"
             android:id="@+id/Value1"
+            android:maxLength="10"
             android:layout_height="wrap_content"
             android:minHeight="20dp"
             android:textSize="18sp"
@@ -36,6 +37,7 @@
             android:layout_width="180dp"
             android:id="@+id/Value2"
             android:layout_height="wrap_content"
+            android:maxLength="10"
             android:minHeight="20dp"
             android:textSize="18sp"
             android:layout_marginLeft="12dp"

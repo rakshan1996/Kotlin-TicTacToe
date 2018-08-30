@@ -8,12 +8,13 @@ import android.widget.Button
 import android.widget.Toast
 import java.nio.file.attribute.AttributeView
 
-class Landing : AppCompatActivity() {
+ class Landing : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landing)
     }
+
 
     fun GetName(view: View){
 

@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".names"></activity>
+        <activity android:name=".Game"></activity>
     </application>
 
 </manifest>
