@@ -13,6 +13,7 @@
         android:layout_weight="1">
 
         <Button
+            android:id="@+id/undo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -20,6 +21,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -36,6 +38,7 @@
         android:layout_weight="1">
 
         <TextView
+            android:id="@+id/score_player1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -45,6 +48,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/score_player2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -83,10 +87,11 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="99"
+        android:layout_height="270dp"
         android:layout_margin="8dp"
+        android:layout_weight="3"
         android:weightSum="3"
+
         >
 
         <TableRow
@@ -98,36 +103,46 @@
             >
 
             <TextView
+                android:id="@+id/Box1"
                 android:layout_height="match_parent"
                 android:background="@drawable/border_right"
                 android:layout_column="1"
                 android:layout_width="117dp"
                 android:autoSizeTextType="uniform"
                 android:clickable="true"
-                android:text="x"
+                android:text=""
+                android:padding="20dp"
                 android:textAlignment="center"
+                android:textSize="44sp"
+                android:onClick="onClick"
                />
 
             <TextView
-
+                android:id="@+id/Box2"
                 android:layout_width="116dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
                 android:autoSizeTextType="uniform"
                 android:background="@drawable/border_right"
                 android:clickable="true"
-
+                android:textSize="44sp"
                 android:text=''
-                android:textAlignment="center" />
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:onClick="onClick"/>
 
             <TextView
+                android:id="@+id/Box3"
                 android:layout_height="match_parent"
                 android:layout_column="3"
                 android:autoSizeTextType="uniform"
                 android:clickable="true"
                 android:text=''
+                android:textSize="44sp"
                 android:textAlignment="center"
+                android:padding="20dp"
                 android:layout_width="116dp"
+                android:onClick="onClick"
                 />
 
         </TableRow>
@@ -135,41 +150,52 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_weight="1"
+            
             android:background="@drawable/table_border">
 
             <TextView
+                android:id="@+id/Box4"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:autoSizeTextType="uniform"
                 android:background="@drawable/border_right"
                 android:layout_width="117dp"
                 android:clickable="true"
+                android:textSize="44sp"
                 android:text=''
+                android:padding="20dp"
                 android:textAlignment="center"
+                android:onClick="onClick"
                 />
 
             <TextView
+                android:id="@+id/Box5"
                 android:layout_height="match_parent"
                 android:layout_column="2"
                 android:background="@drawable/border_right"
                 android:layout_width="116dp"
                 android:clickable="true"
+                android:textSize="44sp"
                 android:autoSizeTextType="uniform"
                 android:text=''
+                android:padding="20dp"
                 android:textAlignment="center"
-
+                android:onClick="onClick"
                 />
 
             <TextView
+                android:id="@+id/Box6"
                 android:layout_height="match_parent"
                 android:layout_column="3"
-
+                android:textSize="44sp"
                 android:layout_width="116dp"
                 android:clickable="true"
                 android:autoSizeTextType="uniform"
                 android:text=''
+                android:padding="20dp"
                 android:textAlignment="center"
-                 />
+                android:onClick="onClick"
+                />
 
         </TableRow>
 
@@ -178,21 +204,28 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/Box7"
                 android:layout_width="117dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
+                android:textSize="44sp"
                 android:autoSizeTextType="uniform"
                 android:background="@drawable/border_right"
                 android:clickable="true"
                 android:text=''
-                android:textAlignment="center" />
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:onClick="onClick"/>
 
             <TextView
+                android:id="@+id/Box8"
                 android:layout_height="match_parent"
                 android:layout_column="2"
+                android:textSize="44sp"
+                android:padding="20dp"
                 android:background="@drawable/border_right"
                 android:layout_width="116dp"
-
+                android:onClick="onClick"
                 android:clickable="true"
                 android:autoSizeTextType="uniform"
                 android:text=''
@@ -200,13 +233,17 @@
                 />
 
             <TextView
+                android:id="@+id/Box9"
                 android:layout_height="match_parent"
                 android:layout_column="3"
+                android:padding="20dp"
                 android:layout_width="111dp"
                 android:clickable="true"
                 android:autoSizeTextType="uniform"
                 android:text=''
+                android:textSize="44sp"
                 android:textAlignment="center"
+                android:onClick="onClick"
                 />
 
         </TableRow>

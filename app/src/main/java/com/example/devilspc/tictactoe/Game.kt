@@ -37,4 +37,6 @@ import android.widget.TextView
         update=findViewById(R.id.name2)
         update.text=name2
     }
+
+
 }
